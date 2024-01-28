@@ -7,7 +7,25 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #232023;
 }
+
+.name{  
+    color: white;
+}
+
+.background-image{ 
+    position: absolute; 
+    height: 100%; 
+    width: 100%; 
+    background-image: url(./Assets/HD-wallpaper-black-colorful-minimalist-artistic-shapes-abstract.jpg);
+    background-size: cover; 
+    background-position: center;
+    z-index: -1; 
+    mask-image: linear-gradient(rgba(0, 0, 0, 1) 80%, transparent);
+    
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -35,6 +53,9 @@ a, .btn{
     font-size: 1.5rem;
  }
 
+ .nav-links li a{
+    color: white;
+ }
  a{
     color: black;
     text-decoration: none;
@@ -51,6 +72,8 @@ a, .btn{
 
  .logo{
     font-size: xx-large;
+    padding: 1.5rem;
+    color: rgb(255,255,255);
  }
  .logo:hover{
     cursor: default;
@@ -147,6 +170,8 @@ section{
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    background-color: rgba(80, 80, 80, 25%);
+    border-radius: 1rem;
 }
 
 .section_pic-container{
@@ -154,16 +179,21 @@ section{
     height: 400px;
     width: 600px;
     margin: auto 0;
+    
 }
 
 .section_pic-container-about{
     display: flex;
     height: 400px;
     width: 400px;
+    margin: auto 0;
+    margin-left: 1.5rem;
 }
 
 .profile-pic{
-    border-radius: 2rem;
+    border-radius: 1rem;
+    border: orange 0.1rem solid;
+    border-color: orange;
 }
 .section_text{
     align-self: center;
@@ -176,16 +206,19 @@ section{
 
 .section_text_p1{
     text-align: center;
+    color: white;
 }
 
 .section_text_p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .title{
     font-size: 3rem;
     text-align: center;
+    color: white;
 }
 
 #socials-container{
@@ -248,6 +281,8 @@ section{
 
 #about{
     position: relative;
+    background-color: rgba(80, 80, 80, 25%);
+    border-radius: 1rem;
 }
 
 .about-containers{
@@ -256,17 +291,19 @@ section{
     margin-bottom: 2rem;
 }
 
-.about-details-continer{
+.about-details-container{
     justify-content: center;
     flex-direction: column;
 }
 
-.about-containers,.about-details-continer{
+.about-containers,.about-details-container{
     display: flex;
 }
 
 .about-pic{
     border-radius: 2rem;
+    border: orange 0.1rem solid;
+    border-color: orange;
 }
 
 .arrow{
@@ -280,12 +317,55 @@ section{
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: orange 0.1rem solid;
+    border-color: orange;
     text-align: center; 
 }
 
 .section-container{
     gap: 4rem;
     height: 80%;
+}
+
+#text-container{
+    color: white;
+}
+
+/* Experience */
+#experience{
+    position: relative;
+}
+
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content:space-around;
+    gap: 0.5;
+
+}
+
+article .icon{
+    cursor: default;
 }
